@@ -26,7 +26,7 @@ total_bill = 0
 if height >= 120:
     print("You can ride the rollercoaster.")
     age = int(input("How old are you? "))
-    take_pic = input("Do you want your picture taken? Y or N ").upper
+    take_pic = input("Do you want to take a pic? Y or N").upper()
     if age > 18:
         total_bill += 12
         if take_pic == "Y":
@@ -36,7 +36,6 @@ if height >= 120:
         total_bill += 7
         if take_pic == "Y":
             total_bill += 3
-        print(f"Your total bill is ${total_bill}")
 
     elif age < 12:
         total_bill += 5
@@ -46,7 +45,6 @@ if height >= 120:
 
 else:
     print("You are not tall enough to ride.")   
-
 
 
 
